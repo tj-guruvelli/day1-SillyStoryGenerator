@@ -11,14 +11,22 @@
     <title>Silly story generator</title>
 
     <style>
-    
+
+    /* Thicker Title */
+    header{
+      color:#888888;    
+      text-shadow: 1px 0 #888888;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+
+
     body {
       text-align: center;
       margin: 0 auto;
       padding: 10px;
       width: 500px;
       font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
-      background-color: #00FFFF;
       background-image: url("SillyFace.jpg");
       background-repeat: no-repeat;
       background-position: center;
@@ -35,11 +43,10 @@
       padding-bottom: 20px;
     }
 
+    /* Placing wording in the input box*/
     input[type="text"] {
       padding: 5px;
       width: 200px;
-      border-width: 3px;
-      border-radius: 10px;
       border-color:  rgba(4, 8, 8, 0);
     }
 
@@ -80,10 +87,10 @@
 
   <body>
     <div>
-      <header class="text-7xl text-white p-4 mb-4">Silly Story Generator</header>
+      <header class="bold_text text-7xl text-white p-4 mb-4">Silly Story Generator</header>
     </div>
     <div>
-      <input id="customname" type="text" placeholder="enter custom name here">
+      <input id="customname" type="text" placeholder="Enter custom name: ">
     </div>
     <div>
       <label for="us" class="text-white" >US</label><input id="us" type="radio" name="ukus" value="us" checked>

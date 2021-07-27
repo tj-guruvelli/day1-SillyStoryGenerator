@@ -34,14 +34,14 @@ function result() {
   newStory = newStory.replace(':insertz:', zItem);
   newStory = newStory.replace(':insertx:', xItem);
 
-
-
-  if(customName.value !== 'Bob') {
+  if(customName.value !== '') {
     let name = customName.value;
     newStory = newStory.replace('Bob', name);
 
 
   }
+
+
 
   if(document.getElementById("uk").checked) {
     let weight = Math.round(weight/14 + 'stone');
